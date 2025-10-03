@@ -1,42 +1,98 @@
-# 📚 Library Book Finder using Binary Search
+# 📚 Library Book Finder
 
-## 📌 Project Idea
-This project implements a **Library Book Finder** using the **Binary Search Algorithm**.  
-Given a list of books sorted alphabetically, the program allows a user to **search for a book by name**.  
-If found, it returns the position of the book in the library list; otherwise, it reports that the book is not available.  
+![Library Banner](https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80)
 
-This project demonstrates the use of **Searching Algorithms** in solving real-world problems efficiently.
-
----
-
-## 🚀 How It Works
-1. The library book list is already sorted alphabetically.  
-2. The user enters the book name to search.  
-3. **Binary Search** is used to find the book:
-   - Compare the target book with the middle element.
-   - If equal → book is found.
-   - If smaller → search the left half.
-   - If larger → search the right half.
-4. Continue until the book is found or search space is empty.
-
+## Project Description
+The **Library Book Finder** is a web-based project built using **Python** and **Streamlit**.  
+It allows users to search for books in a library efficiently using the **Binary Search algorithm**.  
+The project features a visually appealing web interface, interactive search inputs, and instant feedback for users.
 
 ---
 
-## ✨ Features
-- Implements **Binary Search from scratch** (no libraries used).  
-- User-friendly (interactive input).  
-- Works on **any sorted dataset** (can be book names, roll numbers, product IDs).  
-- Demonstrates practical application of searching algorithms.  
-- Includes a **step-by-step ASCII visualization** for clarity.
+## Algorithm Used
+
+### Binary Search
+Binary Search is an efficient algorithm to find an element in a **sorted list**.  
+The list is repeatedly divided in half, comparing the middle element with the target value.  
+- If the middle element is the target, the search ends.  
+- Otherwise, the search continues in the left or right half until the target is found or the list ends.
+
+**Pseudocode:**
+```text
+function binary_search(array, target):
+    left = 0
+    right = length(array) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+        if array[mid] == target:
+            return mid
+        else if array[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+Project Interface
+Main Web Page
+
+Book Found
+
+Book Not Found
+
+How to Run Locally
+Install Python 3.8+
+
+Install Streamlit:
+
+bash
+Copy code
+pip install streamlit
+Navigate to the project folder:
+
+bash
+Copy code
+cd "C:\Users\gogua\OneDrive\Desktop\DAA Project"
+Run the app:
+
+bash
+Copy code
+streamlit run main.py
+The app will open automatically in your default browser.
+
+Features
+Interactive web app using Python + Streamlit
+
+Displays sorted library book list
+
+Users can type or select a book from dropdown
+
+Binary Search implemented from scratch
+
+Visual feedback with success and error images
+
+Beginner-friendly and easy to understand
+
+Complexity Analysis
+Operation	Time Complexity	Space Complexity
+Binary Search (Best Case)	O(1)	O(1)
+Binary Search (Average/Worst Case)	O(log N)	O(1)
+
+Technologies Used
+Python 3
+
+Streamlit
+
+Conclusion
+This project demonstrates the practical use of algorithms in solving real-world problems.
+It combines algorithmic thinking with a web-based interactive interface, making it easy for users to search for books efficiently.
+
+yaml
+Copy code
 
 ---
 
-## 📂 Files
-- `main.py` → Python implementation of Binary Search Book Finder.  
-- `README.md` → Documentation (idea, pseudo-code, complexity analysis, example, visualization).  
+This is a **single Markdown file** (`README.md`) that you can push to GitHub.  
 
----
+If you want, I can also **add a section for “Screenshots of your actual app”** so it looks even more professional for your submission.  
 
-## 👨‍💻 Author
-- Your Name  
-- Date: 2025-10-04
+Do you want me to do that?
