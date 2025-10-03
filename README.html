@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Finder - DAA Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Library Book Finder</h1>
+        
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Library Banner">
+
+        <h2>Project Description</h2>
+        <p>
+            The <strong>Library Book Finder</strong> is a web-based project built using <strong>Python</strong> and <strong>Streamlit</strong>.
+            It allows users to search for books in a library collection efficiently using the <strong>Binary Search algorithm</strong>.
+            The project includes a visually appealing web interface, interactive search inputs, and instant feedback for users.
+        </p>
+
+        <h2>Algorithm Used</h2>
+        <h3>Binary Search</h3>
+        <p>
+            Binary Search is an efficient algorithm to find an element in a <strong>sorted list</strong>. 
+            The list is repeatedly divided in half, comparing the middle element with the target value.
+            If the middle element is the target, the search ends. Otherwise, the search continues in the left or right half until the target is found or the list ends.
+        </p>
+
+        <h3>Pseudocode</h3>
+        <pre>
+function binary_search(array, target):
+    left = 0
+    right = length(array) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+        if array[mid] == target:
+            return mid
+        else if array[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+        </pre>
+
+        <h2>Project Interface</h2>
+        <h3>Main Web Page</h3>
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Main Page">
+
+        <h3>Book Found</h3>
+        <img src="https://images.unsplash.com/photo-1581090700227-9fa041ef2d12?auto=format&fit=crop&w=400&q=80" alt="Book Found">
+
+        <h3>Book Not Found</h3>
+        <img src="https://images.unsplash.com/photo-1601582582196-18c7c6bda5ea?auto=format&fit=crop&w=400&q=80" alt="Book Not Found">
+
+        <h2>How to Run Locally</h2>
+        <ol>
+            <li>Install Python 3.8+.</li>
+            <li>Install Streamlit: <code>pip install streamlit</code></li>
+            <li>Navigate to project folder: <code>cd "C:\Users\gogua\OneDrive\Desktop\DAA Project"</code></li>
+            <li>Run the app: <code>streamlit run app.py</code></li>
+        </ol>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Fully interactive web app with Python + Streamlit.</li>
+            <li>Shows sorted library book list.</li>
+            <li>Supports typing or selecting books from a dropdown.</li>
+            <li>Binary Search implemented from scratch.</li>
+            <li>Visual feedback with success and error images.</li>
+            <li>Beginner-friendly interface.</li>
+        </ul>
+
+        <h2>Complexity Analysis</h2>
+        <table>
+            <tr>
+                <th>Operation</th>
+                <th>Time Complexity</th>
+                <th>Space Complexity</th>
+            </tr>
+            <tr>
+                <td>Binary Search (Best Case)</td>
+                <td>O(1)</td>
+                <td>O(1)</td>
+            </tr>
+            <tr>
+                <td>Binary Search (Average / Worst Case)</td>
+                <td>O(log N)</td>
+                <td>O(1)</td>
+            </tr>
+        </table>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python 3</li>
+            <li>Streamlit</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            This project demonstrates the practical use of algorithms in solving real-world problems.
+            It combines **algorithmic thinking** with a **web-based interactive interface**, making it easy for users to search for books efficiently.
+        </p>
+    </div>
+</body>
+</html>
